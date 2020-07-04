@@ -1,6 +1,6 @@
 FROM phusion/baseimage:0.11
 
-LABEL maintainer="doitandbedone"
+LABEL maintainer="setterlee"
 
 # Add universe repo
 RUN add-apt-repository universe && \
@@ -42,7 +42,7 @@ apt-get install -y libc6-dev
 RUN apt-get install -y unzip
 
 # Download/Install iSpy Agent DVR:
-RUN wget -c https://ispyfiles.azureedge.net/downloads/Agent_Linux64_2_7_6_0.zip -O ispy.zip && \
+RUN wget -c https://ispyfiles.azureedge.net/downloads/Agent_Linux64_2_8_1_0.zip -O ispy.zip && \
 unzip ispy.zip -d /agent && \
 rm ispy.zip
 
